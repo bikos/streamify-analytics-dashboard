@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
-// import { ThemeToggle } from "@/components/theme/theme-toggle";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -18,7 +17,6 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Streamify Dashboard",
   description: "Analytics dashboard for Streamify music streaming service",
-  // TODO add logo and favicon
 };
 
 export default function RootLayout({
