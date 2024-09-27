@@ -15,7 +15,7 @@ import { Pie } from "react-chartjs-2";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
-const COLORS = ["#FFBB28", "#00C49F", "#0088FE"];
+const COLORS = ["#D98594", "#6396D8", "#FECD71"];
 
 export function RevenueDistributionChart() {
   const [activeDatasets] = useState(revenueDistribution.map(() => true));
@@ -69,10 +69,8 @@ export function RevenueDistributionChart() {
   return (
     <Card
       className="col-span-2 transition-all duration-300 ease-in-out hover:scale-[1.02] hover:shadow-md 
-                 bg-gradient-to-br from-blue-400 to-purple-400 
-                 dark:from-blue-600 dark:to-purple-600 
-                 hover:from-blue-500 hover:to-purple-500 
-                 dark:hover:from-blue-700 dark:hover:to-purple-700
+                 bg-indigo-500 dark:bg-indigo-700
+                 hover:bg-indigo-600 dark:hover:bg-indigo-800
                  text-white dark:text-gray-100 border-none
                  shadow-sm"
     >
