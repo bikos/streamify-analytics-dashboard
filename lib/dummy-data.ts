@@ -1,4 +1,4 @@
-import { addDays, subDays, subMonths, format } from "date-fns";
+import { format, subDays, subMonths } from "date-fns";
 
 export const keyMetrics = {
   totalUsers: 1000000,
