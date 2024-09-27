@@ -16,10 +16,13 @@ const COLORS = ["#0088FE", "#00C49F", "#FFBB28"];
 export function RevenueDistributionChart() {
   return (
     <Card
-      className="col-span-2 transition-all duration-300 ease-in-out hover:shadow-md 
-                 bg-gradient-to-br from-blue-400 to-purple-400 
-                 dark:from-blue-600 dark:to-purple-600 
-                 hover:from-blue-500 hover:to-purple-500 
+      className="col-span-2 transition-all duration-300 ease-in-out  hover:shadow-md 
+                     bg-gradient-to-br from-blue-400 to-purple-400 
+                     dark:from-blue-600 dark:to-purple-600 
+                     hover:from-blue-500 hover:to-purple-500 
+                     dark:hover:from-blue-700 dark:hover:to-purple-700
+                     text-white dark:text-gray-100 border-none
+                     shadow-sm
 "
     >
       <CardHeader>
