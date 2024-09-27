@@ -55,13 +55,13 @@ export function RecentStreamsTable() {
 
   return (
     <Card
-      className="col-span-4 transition-all duration-300 ease-in-out hover:shadow-lg 
-                 bg-gradient-to-br from-teal-400 to-blue-500 
-                 dark:from-teal-800 dark:to-blue-900 
-                 hover:from-teal-300 hover:to-blue-600 
-                 dark:hover:from-teal-700 dark:hover:to-blue-800
-                 text-white dark:text-gray-100
-                 border-0"
+      className="col-span-4 transition-all  duration-300 ease-in-out hover:shadow-md 
+                     bg-gradient-to-br from-blue-400 to-purple-400 
+                     dark:from-blue-600 dark:to-purple-600 
+                     hover:from-blue-500 hover:to-purple-500 
+                     dark:hover:from-blue-700 dark:hover:to-purple-700
+                     text-white dark:text-gray-100 border-none
+                     shadow-sm"
     >
       <CardHeader>
         <CardTitle className="text-white dark:text-gray-100">
