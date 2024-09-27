@@ -23,10 +23,8 @@ export default function Home() {
               <div className="lg:col-span-2">
                 <TopStreamedSongsChart />
               </div>
-              <div className="lg:col-span-4">
-                <UserGrowthChart />
-              </div>
             </div>
+            <UserGrowthChart />
             <RecentStreamsTable />
           </div>
         </main>
