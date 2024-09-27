@@ -1,0 +1,49 @@
+.ag-theme-alpine-dark {
+    --ag-background-color: transparent;
+    --ag-header-background-color: rgba(0, 0, 0, 0.2);
+    --ag-odd-row-background-color: rgba(255, 255, 255, 0.05);
+    --ag-header-foreground-color: white;
+    --ag-foreground-color: white;
+    --ag-row-hover-color: rgba(0, 0, 0, 0.1);
+    --ag-alpine-active-color: rgba(0, 0, 0, 0.3);
+    --ag-border-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .ag-theme-alpine-dark .ag-header-cell {
+    font-weight: bold;
+  }
+  
+  .ag-theme-alpine-dark .ag-row-hover {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  .ag-theme-alpine-dark .ag-root-wrapper {
+    border: none;
+  }
+  
+  .ag-theme-alpine-dark .ag-header {
+    border-bottom: 1px solid var(--ag-border-color);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  
+  .ag-theme-alpine-dark .ag-row {
+    border-bottom: 1px solid var(--ag-border-color);
+  }
+  
+  .ag-theme-alpine-dark .ag-row:last-child {
+    border-bottom: none;
+  }
+  
+  .ag-theme-alpine-dark .ag-body-viewport {
+    overflow-y: auto !important;
+  }
+  
+  .ag-theme-alpine-dark .ag-center-cols-clipper {
+    min-height: unset !important;
+  }
+  
+  .ag-theme-alpine-dark .ag-header-row {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
