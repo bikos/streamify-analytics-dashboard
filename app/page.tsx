@@ -9,7 +9,7 @@ import TracingBeam from "@/components/ui/tracing-beam";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen dotted-grid">
       <Header />
       <TracingBeam>
         <main className="flex-grow container mx-auto px-6 py-8">
