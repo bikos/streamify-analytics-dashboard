@@ -1,16 +1,51 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { keyMetrics } from "@/lib/dummy-data";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faUsers,
+  faUserCheck,
+  faPlayCircle,
+  faDollarSign,
+  faStar,
+} from "@fortawesome/free-solid-svg-icons";
 
 export function KeyMetrics() {
+  const metrics = [
+    {
+      title: "Total Users",
+      value: keyMetrics.totalUsers,
+      icon: faUsers,
+      color: "#00ffff",
+    },
+    {
+      title: "Active Users",
+      value: keyMetrics.activeUsers,
+      icon: faUserCheck,
+      color: "#ff00ff",
+    },
+    {
+      title: "Total Streams",
+      value: keyMetrics.totalStreams,
+      icon: faPlayCircle,
+      color: "#ffff00",
+    },
+    {
+      title: "Revenue",
+      value: `$${keyMetrics.revenue}`,
+      icon: faDollarSign,
+      color: "#00ff00",
+    },
+    {
+      title: "Top Artist",
+      value: keyMetrics.topArtist,
+      icon: faStar,
+      color: "#ff8c00",
+    },
+  ];
+
   return (
     <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-5">
-      {[
-        { title: "Total Users", value: keyMetrics.totalUsers },
-        { title: "Active Users", value: keyMetrics.activeUsers },
-        { title: "Total Streams", value: keyMetrics.totalStreams },
-        { title: "Revenue", value: `$${keyMetrics.revenue}` },
-        { title: "Top Artist", value: keyMetrics.topArtist },
-      ].map((metric, index) => (
+      {metrics.map((metric, index) => (
         <Card
           key={index}
           className="transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-md 
@@ -25,6 +60,13 @@ export function KeyMetrics() {
             <CardTitle className="text-sm font-medium">
               {metric.title}
             </CardTitle>
+            <div className="top-0 right-2">
+              <FontAwesomeIcon
+                icon={metric.icon}
+                className="w-6 h-6"
+                style={{ color: metric.color }}
+              />
+            </div>
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold">
