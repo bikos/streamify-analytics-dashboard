@@ -14,11 +14,11 @@ export function KeyMetrics() {
         <Card
           key={index}
           className="transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-md 
-                     bg-gradient-to-br from-blue-400 to-purple-400 
-                     dark:from-blue-600 dark:to-purple-600 
-                     hover:from-blue-500 hover:to-purple-500 
-                     dark:hover:from-blue-700 dark:hover:to-purple-700
-                     text-white dark:text-gray-100 border-none
+                     bg-gradient-to-br from-gray-600 to-gray-900 
+                     dark:from-gray-600 dark:to-black 
+                     hover:from-gray-700 hover:to-gray-900 
+                     dark:hover:from-gray-700 dark:hover:to-black
+                     text-white border-none
                      shadow-sm"
         >
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">

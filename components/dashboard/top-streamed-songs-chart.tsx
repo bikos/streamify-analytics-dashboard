@@ -16,11 +16,13 @@ import {
 export function TopStreamedSongsChart() {
   return (
     <Card
-      className="col-span-2 transition-all duration-300 ease-in-out hover:scale-[1.02] hover:shadow-md 
-                 bg-indigo-500 dark:bg-indigo-700
-                 hover:bg-indigo-600 dark:hover:bg-indigo-800
-                 text-white dark:text-gray-100 border-none
-                 shadow-sm"
+      className="col-span-2 transition-all duration-300 ease-in-out hover:shadow-md 
+                     bg-gradient-to-br from-gray-600 to-gray-900 
+                     dark:from-gray-600 dark:to-black 
+                     hover:from-gray-700 hover:to-gray-900 
+                     dark:hover:from-gray-700 dark:hover:to-black
+                     text-white border-none
+                     shadow-sm"
     >
       <CardHeader>
         <CardTitle className="text-white dark:text-gray-100">
