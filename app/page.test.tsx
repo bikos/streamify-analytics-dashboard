@@ -75,7 +75,7 @@ describe("Home", () => {
     const userGrowthChartContainer =
       screen.getByTestId("user-growth-chart").parentElement;
     expect(userGrowthChartContainer?.getAttribute("class")).toContain(
-      "lg:col-span-4"
+      "space-y-8"
     );
   });
 });
